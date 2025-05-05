@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    color: #e63946;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #colorBtn {
+    background-color: #457b9d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  #hoverBox {
+    background-color: #f1faee;
+    transition: background-color 0.3s;
+    padding: 10px;
+    width: fit-content;
+    margin-top: 10px;
+  }
+  
+  #hoverBox:hover {
+    background-color: #a8dadc;
+  }
+  
+  .thumbnails img {
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .thumbnails img:hover {
+    border-color: #1d3557;
+  }
+  
+  .accordion-content {
+    display: none;
+    margin-top: 10px;
+    background-color: #e0ffe0;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  

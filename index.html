@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Interactive Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎯 JavaScript Playground</h1>
+
+  <section>
+    <button id="colorBtn">Click Me!</button>
+    <div id="hoverBox">Hover over me!</div>
+    <input type="text" id="keypressInput" placeholder="Type something..." />
+    <p id="keypressOutput"></p>
+  </section>
+
+  <section>
+    <h2>Image Gallery</h2>
+    <div id="gallery">
+      <img id="mainImage" src="https://picsum.photos/300/200" alt="Gallery Image">
+      <div class="thumbnails">
+        <img src="https://picsum.photos/100/100?random=1" alt="1" onclick="changeImage(this.src)">
+        <img src="https://picsum.photos/100/100?random=2" alt="2" onclick="changeImage(this.src)">
+        <img src="https://picsum.photos/100/100?random=3" alt="3" onclick="changeImage(this.src)">
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion-toggle">Show More</button>
+      <div class="accordion-content">🎉 Surprise content revealed!</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sign Up Form</h2>
+    <form id="signupForm">
+      <label>Email: <input type="email" id="email" required></label><br>
+      <label>Password: <input type="password" id="password" required></label><br>
+      <button type="submit">Submit</button>
+      <p id="formFeedback"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
